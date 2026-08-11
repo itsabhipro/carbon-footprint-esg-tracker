@@ -1,36 +1,68 @@
 # Multi-Country Carbon Footprint & ESG Tracker
 
-A data-driven platform for tracking carbon footprint and ESG metrics across multiple countries.
+A data-driven platform for tracking **carbon footprint** and **ESG metrics** across multiple countries.
 
-## Overview
+Built as a portfolio demo aligned with Azure data engineering patterns (pipelines, reporting, multi-jurisdiction factors).
 
-Supports organizations in measuring, reporting, and improving environmental and social performance. Focuses on multi-country data collection, pipelines, and insightful reporting.
-
-## Core Capabilities
-
-- Multi-country carbon footprint calculation and tracking
-- ESG (Environmental, Social, Governance) metrics collection
-- Data pipelines for ingestion, transformation, and reporting
-- Dashboards and exportable reports
-
-## Tech Stack (Aligned with Skills)
-
-- Data pipelines (ETL/ELT patterns)
-- Azure Data services (Data Factory, Databricks, Synapse, ADLS Gen2)
-- SQL / PySpark for processing
-- Modern reporting layer
+---
 
 ## Features
 
-- Country-specific emission factors and regulations support
-- Automated data ingestion and transformation pipelines
-- ESG scorecards and trend analysis
-- Compliance-oriented reporting
+- **Dashboard** — Group totals, Scope 1/2/3 mix, 12-month trend, country cards
+- **Countries** — Per-country emissions, YoY change, reduction targets, ESG pillars (E/S/G)
+- **Emissions** — Comparison table, intensity (tCO₂e / employee), monthly trends
+- **Reports** — Sustainability summary and export-ready layout (demo)
 
-## Project Status
+### Countries covered (demo data)
 
-Portfolio project by [Abhishek Kumar](https://github.com/itsabhipro) showcasing data engineering and sustainability reporting capabilities.
+Kuwait · Saudi Arabia · UAE · India · Germany · Netherlands
 
-## License
+---
 
-This project is for portfolio and demonstration purposes.
+## Tech Stack
+
+| Layer | Stack |
+|-------|--------|
+| Frontend | Next.js 14, React 18, TypeScript, Tailwind CSS |
+| Icons | Lucide React |
+| Data (demo) | In-memory multi-country Scope 1–3 + ESG scores |
+| Production path | Azure Data Factory / Databricks / Synapse, SQL, emission factors |
+
+---
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+```bash
+npm run build && npm start
+```
+
+---
+
+## Project structure
+
+```
+app/           # Next.js App Router
+components/    # Dashboard, Countries, Emissions, Reports, Sidebar
+lib/           # Mock data + helpers
+```
+
+---
+
+## Notes
+
+- Demo data is illustrative (not live facility meters).
+- Production systems should use GHG Protocol scopes, country emission factors, and audit trails for CSRD / internal ESG reporting.
+- Designed to showcase UI + multi-country sustainability analytics for portfolio use.
+
+---
+
+## Author
+
+**Abhishek Kumar** — [GitHub](https://github.com/itsabhipro) · [LinkedIn](https://linkedin.com/in/abhishek-kumar-172900382)
