@@ -31,7 +31,7 @@ export default function Sidebar({ active, onNavigate }: Props) {
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-40 w-60 bg-eco-900 text-white flex flex-col transition-transform lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 w-60 bg-eco-900 text-white lg:flex lg:flex-col transition-transform lg:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full"
         )}
       >
