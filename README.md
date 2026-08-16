@@ -23,9 +23,9 @@ Kuwait · Saudi Arabia · UAE · India · Germany · Netherlands
 
 | Layer | Stack |
 |-------|--------|
-| Frontend | Next.js 14, React 18, TypeScript, Tailwind CSS |
+| Frontend | Next.js 16, React 19, TypeScript, Tailwind CSS |
 | Icons | Lucide React |
-| Data (demo) | In-memory multi-country Scope 1–3 + ESG scores |
+| Data (demo) | In-memory multi-country online api + ESG scores |
 | Production path | Azure Data Factory / Databricks / Synapse, SQL, emission factors |
 
 ---
@@ -50,7 +50,7 @@ npm run build && npm start
 ```
 app/           # Next.js App Router
 components/    # Dashboard, Countries, Emissions, Reports, Sidebar
-lib/           # Mock data + helpers
+lib/           # UK carbon api + helpers
 ```
 
 ---
