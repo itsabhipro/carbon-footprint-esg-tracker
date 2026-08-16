@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 // Change from default imports to structured named imports
-import { Sidebar } from "@/components/Sidebar";
+import Sidebar from "@/components/Sidebar";
 import { Dashboard } from "@/components/Dashboard";
 import { CountriesView } from "@/components/CountriesView";
 import { EmissionsView } from "@/components/EmissionsView";
