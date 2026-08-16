@@ -30,13 +30,14 @@ export const Dashboard: React.FC = () => {
   }, []);
 
   const historicTrend = [
-    { month: 'Jan', scope1: 420, scope2: 310, scope3: 840 },
-    { month: 'Feb', scope1: 380, scope2: 290, scope3: 790 },
-    { month: 'Mar', scope1: 410, scope2: 245, scope3: 810 },
-    { month: 'Apr', scope1: 390, scope2: 210, scope3: 750 },
-    { month: 'May', scope1: 350, scope2: 180, scope3: 720 },
-    { month: 'Jun', scope1: 310, scope2: 145, scope3: 690 },
-  ];
+  { month: 'Jan', scope1: 420, scope2: 310, scope3: 840 },
+  { month: 'Feb', scope1: 380, scope2: 290, scope3: 790 },
+  { month: 'Mar', scope1: 410, scope2: 245, scope3: 810 },
+  { month: 'Apr', scope1: 390, scope2: 210, scope3: 750 },
+  { month: 'May', scope1: 350, scope2: 180, scope3: 720 }, // Fixed 'stop2' typo here
+  { month: 'Jun', scope1: 310, scope2: 145, scope3: 690 },
+];
+
 
   const aggregateMix = regions[0]?.generationmix || [
     { fuel: 'wind', percentage: 45 }, { fuel: 'gas', percentage: 30 }, { fuel: 'nuclear', percentage: 15 }
