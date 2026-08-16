@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="flex bg-slate-50 min-h-screen text-slate-800 antialiased">
       <Sidebar active={view} onNavigate={setView} />
-      <main className="flex-1 p-8 max-w-7xl overflow-y-auto">
+      <main className="flex-1 p-2 overflow-y-auto">
         {view === "dashboard" && <Dashboard />}
         {view === "emissions" && <EmissionsView />}
         {view === "countries" && <CountriesView />}
