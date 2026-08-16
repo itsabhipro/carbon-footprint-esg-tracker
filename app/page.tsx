@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="flex bg-slate-50 min-h-screen text-slate-800 antialiased">
-      <Sidebar currentView={view} setView={setView} />
+      <Sidebar active={view} onNavigate={setView} />
       <main className="flex-1 p-8 max-w-7xl overflow-y-auto">
         {view === "dashboard" && <Dashboard />}
         {view === "emissions" && <EmissionsView />}
