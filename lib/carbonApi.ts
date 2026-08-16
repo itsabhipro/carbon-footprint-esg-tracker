@@ -43,6 +43,7 @@ export const carbonApi = {
       const response = await fetch(`${BASE_URL}/intensity`, {
          headers: {
           'Accept': 'application/json',
+           'Content-Type':'application/json',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         },
         next: { revalidate: 1800 }, // Cache on Next.js for 30 mins
@@ -69,6 +70,7 @@ export const carbonApi = {
       const response = await fetch(`${BASE_URL}/regional`, {
          headers: {
           'Accept': 'application/json',
+           'Content-Type':'application/json',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         },
         next: { revalidate: 1800 },
@@ -106,6 +108,7 @@ export const carbonApi = {
       const response = await fetch('https://undp.org', {
          headers: {
           'Accept': 'application/json',
+           'Content-Type':'application/json',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         },
         next: { revalidate: 86400 } // Cache cleanly on Next.js server for 24 hours
