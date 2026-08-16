@@ -95,7 +95,7 @@ export const carbonApi = {
   async getGlobalEsgProfiles(): Promise<GlobalEsgProfile[]> {
     try {
       // Replace with your live global ESG metrics database route when ready
-      const response = await fetch('https://example.com', {
+      const response = await fetch('https://worldbank.org', {
         next: { revalidate: 3600 },
       });
       if (!response.ok) throw new Error('Global endpoint unreachable');
